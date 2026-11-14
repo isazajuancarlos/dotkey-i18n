@@ -1,0 +1,4 @@
+{
+  "login": { "welcome": "Hola, {name}", "submit": "Entrar" },
+  "menu": { "reports": "Informes", "settings": "Ajustes" }
+}

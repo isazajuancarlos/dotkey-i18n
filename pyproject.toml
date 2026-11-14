@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dotkey-i18n"
+version = "0.1.1"
+description = "Internacionalización mínima: claves con notación de punto sobre ficheros JSON, con caché, fallback al idioma por defecto e interpolación. Sin dependencias, sin gettext."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [{ name = "Juan Carlos Isaza", email = "isazajuancarlos@gmail.com" }]
+keywords = ["i18n", "l10n", "internationalization", "localization", "translation", "json", "gettext-alternative"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Localization",
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.urls]
+Homepage = "https://github.com/isazajuancarlos/dotkey-i18n"
+Issues = "https://github.com/isazajuancarlos/dotkey-i18n/issues"
+Blog = "https://xiliux.com/blog/i18n-minima-sin-gettext-claves-de-punto-json"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

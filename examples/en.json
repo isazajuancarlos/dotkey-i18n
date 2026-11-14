@@ -1,0 +1,4 @@
+{
+  "login": { "welcome": "Hello, {name}", "submit": "Sign in" },
+  "menu": { "reports": "Reports" }
+}
